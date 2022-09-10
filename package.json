@@ -1,0 +1,38 @@
+{
+  "name": "originaldecode.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "watch:build": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OriginalDecode/originaldecode.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OriginalDecode/originaldecode.github.io/issues"
+  },
+  "homepage": "https://github.com/OriginalDecode/originaldecode.github.io#readme",
+  "devDependencies": {
+    "esbuild": "^0.15.7",
+    "eslint": "^8.23.0",
+    "eslint-plugin-react": "^7.31.8",
+    "husky": "^8.0.1",
+    "nodemon": "^2.0.19"
+  },
+  "nodemonConfig": {
+    "watch": "src/client",
+    "ext": "js, jsx",
+    "exec": "node ./esbuild.config.js"
+  },
+  "dependencies": {
+    "esbuild-plugin-eslint": "^0.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
