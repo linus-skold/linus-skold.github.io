@@ -5,8 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "watch:build": "nodemon",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon",
+    "watch:build": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -27,11 +27,13 @@
   },
   "nodemonConfig": {
     "watch": "src/client",
-    "ext": "js, jsx",
+    "ext": "js, jsx, css",
     "exec": "node ./esbuild.config.js"
   },
   "dependencies": {
+    "esbuild-copy-static-files": "^0.1.0",
     "esbuild-plugin-eslint": "^0.1.1",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }

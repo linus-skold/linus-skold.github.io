@@ -7,8 +7,7 @@
         "eslint:recommended",
         "plugin:react/recommended"
     ],
-    "overrides": [
-    ],
+    "overrides": [],
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
@@ -16,8 +15,15 @@
     "plugins": [
         "react"
     ],
-    "ignorePatterns": ["*.html"],
+    "ignorePatterns": [
+        "*.html"
+    ],
     "rules": {
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "react/prop-types": 0,
         "indent": [
             "error",
             "tab"
@@ -37,8 +43,7 @@
     },
     "settings": {
         "react": {
-          "version": "detect"
+            "version": "detect"
         }
-      }
-    
+    }
 }

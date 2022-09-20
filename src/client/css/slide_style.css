@@ -1,0 +1,23 @@
+html {
+    background-color: rgb(48, 48, 48);
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+#profile {
+    background-image: url("./static/background.png");
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+}
