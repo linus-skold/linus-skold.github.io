@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon",
-    "watch:build": "nodemon"
+    "watch:build": "nodemon",
+    "build": "node ./esbuild.config.js"
   },
   "repository": {
     "type": "git",
